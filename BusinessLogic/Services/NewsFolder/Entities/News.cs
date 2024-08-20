@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BusinessLogic.Services.News.Entities
+namespace BusinessLogic.Services.NewsFolder.Entities
 {
     public sealed record class News
     {

@@ -3,16 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\juanm\\OneDrive\\Desktop\\CSP-API\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{CDD881D2-4C23-436F-8353-C662CE1BF2AD}|CSP-API\\CSP-API.csproj|c:\\users\\juanm\\onedrive\\desktop\\csp-api\\csp-api\\controllers\\news\\models\\getallnewsresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CDD881D2-4C23-436F-8353-C662CE1BF2AD}|CSP-API\\CSP-API.csproj|solutionrelative:csp-api\\controllers\\news\\models\\getallnewsresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CDD881D2-4C23-436F-8353-C662CE1BF2AD}|CSP-API\\CSP-API.csproj|c:\\users\\juanm\\onedrive\\desktop\\csp-api\\csp-api\\controllers\\news\\newscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CDD881D2-4C23-436F-8353-C662CE1BF2AD}|CSP-API\\CSP-API.csproj|solutionrelative:csp-api\\controllers\\news\\newscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{70012AC5-CC42-484E-8B97-9682FD398F0D}|BusinessLogic\\BusinessLogic.csproj|c:\\users\\juanm\\onedrive\\desktop\\csp-api\\businesslogic\\services\\news\\inewsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{70012AC5-CC42-484E-8B97-9682FD398F0D}|BusinessLogic\\BusinessLogic.csproj|solutionrelative:businesslogic\\services\\news\\inewsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{70012AC5-CC42-484E-8B97-9682FD398F0D}|BusinessLogic\\BusinessLogic.csproj|c:\\users\\juanm\\onedrive\\desktop\\csp-api\\businesslogic\\services\\news\\entities\\news.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{70012AC5-CC42-484E-8B97-9682FD398F0D}|BusinessLogic\\BusinessLogic.csproj|solutionrelative:businesslogic\\services\\news\\entities\\news.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{70012AC5-CC42-484E-8B97-9682FD398F0D}|BusinessLogic\\BusinessLogic.csproj|c:\\users\\juanm\\onedrive\\desktop\\csp-api\\businesslogic\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{70012AC5-CC42-484E-8B97-9682FD398F0D}|BusinessLogic\\BusinessLogic.csproj|solutionrelative:businesslogic\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,11 +26,37 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "GetAllNewsResponse.cs",
+              "DocumentMoniker": "C:\\Users\\juanm\\OneDrive\\Desktop\\CSP-API\\CSP-API\\Controllers\\News\\Models\\GetAllNewsResponse.cs",
+              "RelativeDocumentMoniker": "CSP-API\\Controllers\\News\\Models\\GetAllNewsResponse.cs",
+              "ToolTip": "C:\\Users\\juanm\\OneDrive\\Desktop\\CSP-API\\CSP-API\\Controllers\\News\\Models\\GetAllNewsResponse.cs",
+              "RelativeToolTip": "CSP-API\\Controllers\\News\\Models\\GetAllNewsResponse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-20T17:16:23.653Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "NewsController.cs",
+              "DocumentMoniker": "C:\\Users\\juanm\\OneDrive\\Desktop\\CSP-API\\CSP-API\\Controllers\\News\\NewsController.cs",
+              "RelativeDocumentMoniker": "CSP-API\\Controllers\\News\\NewsController.cs",
+              "ToolTip": "C:\\Users\\juanm\\OneDrive\\Desktop\\CSP-API\\CSP-API\\Controllers\\News\\NewsController.cs",
+              "RelativeToolTip": "CSP-API\\Controllers\\News\\NewsController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-20T16:21:48.937Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "News.cs",
               "DocumentMoniker": "C:\\Users\\juanm\\OneDrive\\Desktop\\CSP-API\\BusinessLogic\\Services\\News\\Entities\\News.cs",
               "RelativeDocumentMoniker": "BusinessLogic\\Services\\News\\Entities\\News.cs",
@@ -38,28 +68,16 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "INewsService.cs",
               "DocumentMoniker": "C:\\Users\\juanm\\OneDrive\\Desktop\\CSP-API\\BusinessLogic\\Services\\News\\INewsService.cs",
               "RelativeDocumentMoniker": "BusinessLogic\\Services\\News\\INewsService.cs",
               "ToolTip": "C:\\Users\\juanm\\OneDrive\\Desktop\\CSP-API\\BusinessLogic\\Services\\News\\INewsService.cs",
               "RelativeToolTip": "BusinessLogic\\Services\\News\\INewsService.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABAAAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-19T22:20:14.86Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Class1.cs",
-              "DocumentMoniker": "C:\\Users\\juanm\\OneDrive\\Desktop\\CSP-API\\BusinessLogic\\Class1.cs",
-              "RelativeDocumentMoniker": "BusinessLogic\\Class1.cs",
-              "ToolTip": "C:\\Users\\juanm\\OneDrive\\Desktop\\CSP-API\\BusinessLogic\\Class1.cs",
-              "RelativeToolTip": "BusinessLogic\\Class1.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-19T22:08:17.555Z"
             }
           ]
         }

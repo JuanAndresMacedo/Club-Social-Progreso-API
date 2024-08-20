@@ -30,3 +30,6 @@ C:\Users\juanm\OneDrive\Desktop\CSP-API\CSP-API\obj\Debug\net8.0\refint\CSP-API.
 C:\Users\juanm\OneDrive\Desktop\CSP-API\CSP-API\obj\Debug\net8.0\CSP-API.pdb
 C:\Users\juanm\OneDrive\Desktop\CSP-API\CSP-API\obj\Debug\net8.0\CSP-API.genruntimeconfig.cache
 C:\Users\juanm\OneDrive\Desktop\CSP-API\CSP-API\obj\Debug\net8.0\ref\CSP-API.dll
+C:\Users\juanm\OneDrive\Desktop\CSP-API\CSP-API\obj\Debug\net8.0\CSP-API.sourcelink.json
+C:\Users\juanm\OneDrive\Desktop\CSP-API\CSP-API\bin\Debug\net8.0\BusinessLogic.dll
+C:\Users\juanm\OneDrive\Desktop\CSP-API\CSP-API\bin\Debug\net8.0\BusinessLogic.pdb
