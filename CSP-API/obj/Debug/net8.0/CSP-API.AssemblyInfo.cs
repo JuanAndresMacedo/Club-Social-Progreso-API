@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CSP-API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4d302560b2c7caad2024aaa5941163c1fa609cde")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d7b30a50ee0767e1bfac8343ecf3c47add59fe43")]
 [assembly: System.Reflection.AssemblyProductAttribute("CSP-API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CSP-API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

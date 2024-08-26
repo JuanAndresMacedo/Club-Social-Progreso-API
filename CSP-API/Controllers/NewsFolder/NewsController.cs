@@ -14,6 +14,18 @@ namespace CSP_API.Controllers.NewsFolder
         {
             _newsService = newsService;
         }
+        
+        [HttpGet("/news/getById/{newsId}")]
+        public GetNewsByIdResponse GetById(string newsId)
+        {
+            return new GetNewsByIdResponse(_newsService.GetById(newsId));
+        }
+        
+        [HttpGet("/news/getLatestNews")]
+        public GetAllNewsResponse GetLatestNews()
+        {
+            return new GetAllNewsResponse(_newsService.GetLatestNews());
+        }
 
         [HttpGet("/news/getAll")]
         public GetAllNewsResponse GetAll()

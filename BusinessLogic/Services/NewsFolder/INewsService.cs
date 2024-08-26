@@ -10,10 +10,10 @@ namespace BusinessLogic.Services.NewsFolder
 {
     public interface INewsService
     {
+        News GetById(string newsId);
+
         List<News> GetAll(Expression<Func<News, bool>> predicate);
 
-        List<News> GetMainNews(Expression<Func<News, bool>> predicate);
-
-        List<News> GetSecondaryNews(Expression<Func<News, bool>> predicate);
+        List<News> GetLatestNews();
     }
 }

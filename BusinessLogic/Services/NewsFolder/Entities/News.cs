@@ -13,7 +13,7 @@ namespace BusinessLogic.Services.NewsFolder.Entities
 
         public string Title { get; set; } = null!;
 
-        public string Content { get; set; } = null!;
+        public List<NewsContent> Content { get; set; } = new List<NewsContent>();
 
         public string Description { get; set; } = null!;
 
