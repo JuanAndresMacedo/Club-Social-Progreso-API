@@ -1,15 +1,15 @@
 [
   {
-    "ContainingType": "CSP_API.Controllers.WeatherForecastController",
-    "Method": "Get",
-    "RelativePath": "WeatherForecast",
+    "ContainingType": "CSP_API.Controllers.NewsFolder.NewsController",
+    "Method": "GetAll",
+    "RelativePath": "news/getAll",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [],
     "ReturnTypes": [
       {
-        "Type": "System.Collections.Generic.IEnumerable\u00601[[CSP_API.WeatherForecast, CSP-API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "Type": "CSP_API.Controllers.NewsFolder.Models.GetAllNewsResponse",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -17,7 +17,52 @@
         ],
         "StatusCode": 200
       }
+    ]
+  },
+  {
+    "ContainingType": "CSP_API.Controllers.NewsFolder.NewsController",
+    "Method": "GetById",
+    "RelativePath": "news/getById/{newsId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "newsId",
+        "Type": "System.String",
+        "IsRequired": true
+      }
     ],
-    "EndpointName": "GetWeatherForecast"
+    "ReturnTypes": [
+      {
+        "Type": "CSP_API.Controllers.NewsFolder.Models.GetNewsByIdResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CSP_API.Controllers.NewsFolder.NewsController",
+    "Method": "GetLatestNews",
+    "RelativePath": "news/getLatestNews",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "CSP_API.Controllers.NewsFolder.Models.GetAllNewsResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
   }
 ]

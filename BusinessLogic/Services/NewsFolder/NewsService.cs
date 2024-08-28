@@ -1,3 +1,4 @@
+using System.Globalization;
 using System.Linq.Expressions;
 using BusinessLogic.Services.NewsFolder.Entities;
 
@@ -22,7 +23,7 @@ public class NewsService : INewsService
     public List<News> GetAll(Expression<Func<News, bool>> predicate)
     {
         List<News> allNews = _repository.GetAll(predicate)
-            .OrderByDescending(news => DateTime.Parse(news.Date))
+            .OrderByDescending(news => convertirStringAFecha(news.Date))
             .ToList();
         
         foreach (var news in allNews)
@@ -36,7 +37,7 @@ public class NewsService : INewsService
     public List<News> GetLatestNews()
     {
         List<News> allNews = _repository.GetAll(news => true)
-            .OrderByDescending(news => DateTime.Parse(news.Date))
+            .OrderByDescending(news => convertirStringAFecha(news.Date))
             .Take(6)
             .ToList();
         
@@ -46,5 +47,18 @@ public class NewsService : INewsService
         }
 
         return allNews;
+    }
+
+    private DateTime convertirStringAFecha(string fechaString)
+    {
+        try
+        {
+            return DateTime.ParseExact(fechaString, "dd/MM/yyyy",
+                CultureInfo.InvariantCulture);
+        }
+        catch (FormatException)
+        {
+            return DateTime.MinValue;
+        }
     }
 }
