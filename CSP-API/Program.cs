@@ -13,6 +13,7 @@ builder
     .ConfigureApiBehaviorOptions(options => { options.SuppressModelStateInvalidFilter = true; });
 
 builder.Services.AddControllers();
+builder.Services.AddAWSLambdaHosting(LambdaEventSource.RestApi);
 
 var services = builder.Services;
 services.AddControllers().AddJsonOptions(options =>
