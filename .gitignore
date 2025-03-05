@@ -10,3 +10,12 @@
 # Archivos de compilación
 bin/
 obj/
+!obj/**/*.gitkeep
+
+# Archivos de configuración y dependencias
+*.nuget.cache
+*.nuget.dgspec.json
+*.nuget.props
+project.assets.json
+project.nuget.cache
+packages/
