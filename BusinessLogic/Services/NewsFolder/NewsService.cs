@@ -7,41 +7,22 @@ namespace BusinessLogic.Services.NewsFolder;
 public class NewsService : INewsService
 {
     private readonly IRepository<News> _repository;
-    private readonly List<News> _allNews = new List<News>();
 
     public NewsService(IRepository<News> repository)
     {
         //_repository = repository;
-        _allNews.Add(
-            new News
-            {
-                Id = Guid.NewGuid().ToString(),
-                Title = "Noticia de Ejemplo 1",
-                Description = "Esta es la primera noticia de ejemplo",
-                ImageUrl = "https://misitio.com/imagen1.jpg",
-                Date = "01/03/2025",
-                Topic = "Tecnología",
-                VerticalImage = false,
-                Content = new List<NewsContent>
-            {
-                new NewsContent
-                {
-                    Paragraph = "Párrafo 1 de la noticia 1",
-                    Index = 0
-                },
-                new NewsContent
-                {
-                    Paragraph = "Párrafo 2 de la noticia 1",
-                    Index = 1
-                }
-            }
-            });
     }
 
     public News GetById(string newsId)
     {
-        News news = _repository.Get(n => n.Id == newsId);
-        news.Content = news.Content.OrderBy(c => c.Index).ToList();
+        /*News news = _repository.Get(n => n.Id == newsId);*/
+
+        News news = NewsData.NewsList.FirstOrDefault(n => n.Id == newsId);
+        
+        if (news != null)
+        {
+            news.Content = news.Content.OrderBy(c => c.Index).ToList();
+        }
         return news;
     }
 
@@ -50,7 +31,10 @@ public class NewsService : INewsService
         /*List<News> allNews = _repository.GetAll(predicate)
             .OrderByDescending(news => convertirStringAFecha(news.Date))
             .ToList();*/
-        List<News> allNews = _allNews.ToList();
+
+        List<News> allNews = NewsData.NewsList
+            .OrderByDescending(news => convertirStringAFecha(news.Date))
+            .ToList();
 
         foreach (var news in allNews)
         {
@@ -62,11 +46,16 @@ public class NewsService : INewsService
 
     public List<News> GetLatestNews()
     {
-        List<News> allNews = _repository.GetAll(news => true)
+        /*List<News> allNews = _repository.GetAll(news => true)
+            .OrderByDescending(news => convertirStringAFecha(news.Date))
+            .Take(6)
+            .ToList();*/
+
+        List<News> allNews = NewsData.NewsList
             .OrderByDescending(news => convertirStringAFecha(news.Date))
             .Take(6)
             .ToList();
-        
+
         foreach (var news in allNews)
         {
             news.Content = news.Content.OrderBy(c => c.Index).ToList();
