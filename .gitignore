@@ -11,6 +11,7 @@
 bin/
 obj/
 !obj/**/*.gitkeep
+BusinessLogic/obj/
 
 # Archivos de configuración y dependencias
 *.nuget.cache
