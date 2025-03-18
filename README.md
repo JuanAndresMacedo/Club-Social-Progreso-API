@@ -48,3 +48,9 @@ En este paquete se encuentra el contexto de la base de datos, la implementación
 | GET   | `/getAll`              | -          | 200, 403, 500 | -       |
 | GET   | `/getLatestNews`       | -          | 200, 403, 500 | -       |
 | GET   | `/getById/{newsId}`    | -          | 200, 403, 500 | -       |
+
+# Contacto
+
+Juan Andrés Macedo - juanmacedo2003@hotmail.com
+
+Linkedin: [https://www.linkedin.com/in/juan-andres-macedo/](https://www.linkedin.com/in/juan-andres-macedo/)
